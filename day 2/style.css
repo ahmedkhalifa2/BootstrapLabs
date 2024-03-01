@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  margin: 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header .image {
+  background-image: url(download.jpg);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+header p {
+  padding: 0 10%;
+}
+
+.col-1 {
+  width: 6.25%;
+}
+
+.col-2 {
+  width: 12.5%;
+}
+
+.col-3 {
+  width: 18.75%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-5 {
+  width: 31.25%;
+}
+
+.col-6 {
+  width: 37.5%;
+}
+
+.col-7 {
+  width: 43.75%;
+}
+
+.col-8 {
+  width: 50%;
+}
+
+.col-9 {
+  width: 56.25%;
+}
+
+.col-10 {
+  width: 62.5%;
+}
+
+.col-11 {
+  width: 68.75%;
+}
+
+.col-12 {
+  width: 75%;
+}
+
+.col-13 {
+  width: 81.25%;
+}
+
+.col-14 {
+  width: 87.5%;
+}
+
+.col-15 {
+  width: 93.75%;
+}
+
+.col-16 {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  margin: 0 5%;
+}
+
+.education {
+  text-align: center;
+}
+.education h1 {
+  background-color: green;
+  padding: 10px;
+  color: white;
+}
+.education .botton-border {
+  border-bottom: 1px solid red;
+  margin: 0 8px 20px;
+}
+
+.Achivement h1 {
+  text-align: center;
+  background-color: lightcoral;
+}
+
+.EXPERIENCE h1 {
+  text-align: center;
+  background-color: lightblue;
+}
+.EXPERIENCE .col-3 {
+  display: flex;
+  flex-direction: column;
+}
+.EXPERIENCE .col-3 span:nth-child(2) {
+  color: lightblue;
+}
+
+footer {
+  background-color: rgb(7, 7, 47);
+  margin: 2% 5%;
+  color: white;
+}
+footer div {
+  margin-right: 3%;
+  padding: 0 10% 0 0;
+}
+footer .CONTACT {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer .CONTACT h3 {
+  border-bottom: 2px solid pink;
+  margin-bottom: 5%;
+}
+footer .CONTACT div {
+  margin-bottom: 8%;
+}
+footer .LANGUAGES {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer .LANGUAGES h3 {
+  border-bottom: 2px solid rgb(56, 214, 17);
+  margin-bottom: 5%;
+}
+footer .LANGUAGES div {
+  margin-bottom: 4%;
+}
+footer .LANGUAGES .english {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #ff8a00 0%, #ff8a00 90%, #eee 90%);
+}
+footer .LANGUAGES .spanish {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #ff8a00 0%, #ff8a00 80%, #eee 80%);
+}
+footer .LANGUAGES .german {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #ff8a00 0%, #ff8a00 70%, #eee 70%);
+}
+footer .SKILLS {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer .SKILLS h3 {
+  border-bottom: 2px solid lightblue;
+  margin-bottom: 5%;
+}
+footer .SKILLS div {
+  margin-bottom: 4%;
+}
+footer .SKILLS .css {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #ff8a00 0%, #ff8a00 90%, #eee 90%);
+}
+footer .SKILLS .html {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #ff8a00 0%, #ff8a00 80%, #eee 80%);
+}
+footer .SKILLS .js {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #ff8a00 0%, #ff8a00 70%, #eee 70%);
+}
+footer .HOBBIES {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer .HOBBIES h3 {
+  border-bottom: 2px solid rgb(214, 208, 17);
+  margin-bottom: 5%;
+}
+footer .HOBBIES div {
+  margin-bottom: 8%;
+}
+
+@media (max-width: 768px) {
+  header .image {
+    background-image: url(unnamed.jpg);
+  }
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  footer {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .row .LANGUAGES, .row .SKILLS, .row .CONTACT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .row .LANGUAGES div, .row .SKILLS div, .row .CONTACT div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 2% 6%;
+    flex-direction: column;
+  }
+  .Achivement .row, .EXPERIENCE .row, .education .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Achivement .row div, .EXPERIENCE .row div, .education .row div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .education .row .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

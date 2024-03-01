@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dayResponsive</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+   body{
+    max-height: 100vh;
+   }
+    main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    header{
+        text-align: center;
+        background-color: lightgreen;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        background-color: aqua;
+    }
+    @media (max-width:450px) {
+        nav{
+            display: none;
+        }
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li{
+        margin-right: 25px;
+    }
+    #content{
+        display: flex;
+        flex-direction: row;
+    }
+    #left{
+        background-color: rgb(150, 153, 155);
+        width: 30%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    #left img{
+        width: 80%;
+        height: 20vh;
+    }
+    #center{
+        width: 40%;
+        padding: 20px;
+        background-color: antiquewhite;
+    }
+    #center h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #center ul{
+        margin-left: 40px;
+    }
+    #right{
+        width: 30%;
+        background-color: aliceblue;
+        padding: 10px;
+        
+    }
+    #right img{
+        width: 90%;
+        height: 20vh;
+    }
+    footer{
+        text-align: center;
+        color: red;
+        height: 10vh;
+    }
+    #myPages{
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    i{
+        font-size: 40px;
+        margin-top: 60px;
+        color: lightblue;
+    }
+    article{
+        border-bottom: 1px solid black;
+        padding-bottom: 40px;
+    }
+    /* @media (max-width:768px) {
+        #right{
+            display: none;
+        }
+        #center{
+            width: 70%;
+        }
+    }
+    @media (max-width:576px) {
+        #right{
+            display: none;
+        }
+        #left{
+            display: none;
+        }
+        #center{
+            width: 100%;
+        }
+    } */
+    @media (max-width:768px) {
+        #content{
+            display: flex;
+            flex-direction: column;
+        }
+        #left{
+            width: 100%;
+        }
+        #right{
+            width: 100%;
+        }
+        #center{
+            width: 100%;
+        }
+        #right img{
+        width: 90%;
+        height: 50vh;
+    }
+    #left img{
+        width: 80%;
+        height: 50vh;
+    }
+        
+    }
+</style>
+<body>
+    <main >
+        <header>Website Logo (Image)</header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>contact us</li>
+                <li>about us</li>
+            </ul>
+        </nav>
+        <section id="content">
+            <aside id="left">
+                <article>
+                    <p>
+                        Login box in div containing 
+                    user name, password text boxes and login button (image Button).Make a 
+                    border to div 
+                    </p>
+                </article>
+                <div id="myPages">
+                    <span>My Pages Online</span>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div>
+                    <img src="4633.jpg" >
+                </div>
+            </aside>
+            <section id="center">
+                <h1>my Profile</h1>
+                <ul>
+                    <li>Name:</li>
+                    <li>Age:</li>
+                    <li>Address</li>
+                    <li>Phones</li>
+                    <li>Faculty</li>
+                    <li>Hobbies</li>
+                    <ul>
+                        <li>I.</li>
+                        <li>II</li>
+                        <li>III.</li>
+                    </ul>
+                    <li>Name</li>
+                    <li>Name</li>
+                    <li>Name</li>
+                    <li>Mail: link <a href="">mail to your email</a></li>
+                </ul>
+               
+            </section>
+            <aside id="right">
+                
+                    <img src="4633.jpg">
+               <hr>
+               <p style="text-align: center; margin-top: 100px; color: red;">
+                News bar
+               </p>
+            </aside>
+        </section>
+        <footer>Copyrights © are reserved to ITI.</footer>
+    </main>
+    <script src="https://kit.fontawesome.com/dc429c2f8a.js" crossorigin="anonymous"></script>
+</body>
+</html>

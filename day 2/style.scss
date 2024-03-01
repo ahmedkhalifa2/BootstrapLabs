@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    margin: 8%;
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+}
+header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .image{
+        background-image: url(download.jpg);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    p{
+        padding: 0 10%;
+    }
+}
+$total:16;
+
+@function calcWidth($col){
+    @return percentage($col/$total)
+}
+
+@for $i from 1 through $total{
+    .col-#{$i}{
+        width:calcWidth($i)
+    }
+}
+.row{
+    display: flex;
+   margin: 0 5%;
+}
+.education{
+    text-align: center;
+    h1{
+        background-color: green;
+        padding: 10px;
+        color: white;
+    }
+    .botton-border{
+        border-bottom: 1px solid red;
+        margin: 0 8px 20px ;
+    }
+}
+.Achivement{
+    h1{
+        text-align: center;
+        background-color: lightcoral;
+    }
+}
+.EXPERIENCE{
+    h1{
+        text-align: center;
+        background-color: lightblue
+    }
+    .col-3{
+        display: flex;
+        flex-direction: column;
+        span:nth-child(2){
+            color: lightblue;
+        }
+    }
+}
+footer{
+    background-color: rgb(7, 7, 47);
+    margin: 2% 5%;
+    color: white;
+    div{
+        margin-right: 3%;
+        padding: 0 10% 0 0;
+    }
+    .CONTACT{
+        h3{
+            border-bottom: 2px solid pink;
+            margin-bottom: 5%;
+        }
+        div{
+            margin-bottom: 8%;
+        }
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+    .LANGUAGES{
+        h3{
+            border-bottom: 2px solid rgb(56, 214, 17);
+            margin-bottom: 5%;
+        }
+        div{
+            margin-bottom: 4%;
+        }
+      
+
+        .english{
+            height: 20px;
+            width: 100%;
+            background: linear-gradient(to right,#ff8a00 0% ,#ff8a00 90% ,#eee 90%);
+           
+        }
+        .spanish{
+            height: 20px;
+            width: 100%;
+            background: linear-gradient(to right,#ff8a00 0% ,#ff8a00 80% ,#eee 80%);
+        }
+        .german{
+            height: 20px;
+            width: 100%;
+            background: linear-gradient(to right,#ff8a00 0% ,#ff8a00 70% ,#eee 70%);
+        }
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    .SKILLS{
+        h3{
+            border-bottom: 2px solid lightblue;
+            margin-bottom: 5%;
+        }
+        div{
+            margin-bottom: 4%;
+        }
+        .css{
+            height: 20px;
+            width: 100%;
+            background: linear-gradient(to right,#ff8a00 0% ,#ff8a00 90% ,#eee 90%);
+           
+        }
+        .html{
+            height: 20px;
+            width: 100%;
+            background: linear-gradient(to right,#ff8a00 0% ,#ff8a00 80% ,#eee 80%);
+        }
+        .js{
+            height: 20px;
+            width: 100%;
+            background: linear-gradient(to right,#ff8a00 0% ,#ff8a00 70% ,#eee 70%);
+        }
+        
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    .HOBBIES{
+        h3{
+            border-bottom: 2px solid rgb(214, 208, 17);
+            margin-bottom: 5%;
+        }
+        div{
+            margin-bottom: 8%;
+        }
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width:768px) {
+   header .image{
+        background-image: url(unnamed.jpg);
+    }
+    main{
+        margin: 0;
+        padding: 0;
+    }
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+
+}
+@media (max-width:600px) {
+   footer .row{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 0;
+       padding: 0;
+   }
+   .row .LANGUAGES,.row .SKILLS,.row .CONTACT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+   }
+.row .LANGUAGES div,.row .SKILLS div,.row .CONTACT div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 2% 6%;
+    flex-direction: column;
+   }
+   .Achivement .row,.EXPERIENCE .row ,.education .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .Achivement .row div,.EXPERIENCE .row div ,.education .row div{
+    margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   text-align: center;
+   }
+   .education .row .col-3{
+    display: flex;
+    flex-direction: column;
+   }
+ }
